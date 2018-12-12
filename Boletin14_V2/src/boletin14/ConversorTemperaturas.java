@@ -20,7 +20,7 @@ public class ConversorTemperaturas {
     //Excepcion DEfinida, introducimos la temperatura y si no es correcta lanzamos la excepcion TemperaturaErradaExcepcion.
     public void temperaturaExcepcionDefinida() throws TemperaturaErradaExcepcion {
         temperatura = Float.parseFloat(JOptionPane.showInputDialog("Introduce la temperatura en grados centígrados"));
-        if (temperatura < 80f) {
+        if (temperatura < TE) {
             throw new TemperaturaErradaExcepcion("Temperatura inferior a 80 grados Celsius");
         }
     }
